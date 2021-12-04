@@ -1,0 +1,50 @@
+#skills-section {
+	margin-top: 5%;
+	margin-bottom: 5%;	
+}
+
+div.feature-item i {
+    font-size: 100px;
+    background: -webkit-linear-gradient(to left, #00cbfe, #00cbfe);
+    background: linear-gradient(to left, #00cbfe, #00cbfe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 50px 0;   
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;    
+}
+
+.project-card {
+    padding: 30px;
+    border: 1px solid rgba(0,0,0,.1);
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    background: #fff;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    vertical-align: top;
+    display: inline-block;
+    margin: 30px;
+}
+
+.project-card .title {
+    margin-top: 20px;
+    font-size: 15pt;
+    font-weight: 500;
+    display: block;
+    line-height: 1.6em;
+}
+
+#projects-section {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: -webkit-center;
+}

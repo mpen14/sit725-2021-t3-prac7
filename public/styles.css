@@ -1,26 +1,23 @@
-.helloInput {
-  width: 200px;
-}
-
-.title{
-  color: white;
-}
-.mainText{
-  color:white;
-}
-
 body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  background-color: #B783C3;
-
+	font-family: sans-serif "helvetica-neue";
 }
 
-.page-footer{
-  background-color: #9E65A9;
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #ccc;
 }
-main {
-  flex: 1 0 auto;
+
+.italic {
+	font-style: italic;
 }
-    
+
+.center {
+	text-align: center;
+}
+
+footer {
+	margin-top: 3%;
+}
+

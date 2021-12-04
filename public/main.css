@@ -1,0 +1,25 @@
+body {
+    padding-bottom: 20px;
+  }
+  
+  .navbar {
+    margin-bottom: 20px;
+  }
+  
+  section.intro-section {
+      margin-bottom: 10%;
+      padding-bottom: 20px;
+  }
+  
+  ul.disc-style {
+      list-style-type: disc;
+  }
+  
+  .bg {
+    background-image: url("");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  

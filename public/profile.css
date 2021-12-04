@@ -1,0 +1,22 @@
+
+.social_icon {
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 20pt;
+    height: 10px;
+    display: inline-block;
+    margin: 30px;
+    margin-top: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+}
+
+
+.responsive-img {
+    
+    width: 1500px;
+    height: 300px;
+    margin-top: 25px;
+   
+}

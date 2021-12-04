@@ -8,9 +8,23 @@
     <title>Manali Pen Portfolio</title>
 
     <!-- Compiled and minified CSS -->
+
+     <!-- Bootstrap core CSS -->
+  <link href="dist/css/bootstrap.min.css" rel="stylesheet">	
+  <link href="main.css" rel="stylesheet">	       
+  <link href="profile.css" rel="stylesheet">	
+  <link href="skills.css" rel="stylesheet">	
+  <link href="styles.css" rel="stylesheet">	
+  <link href="timeline.css" rel="stylesheet">
+
+    <!-- CSS -->
+  <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+
     <!-- Materialze-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+    <!-- Add icon library -->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Materialize icons-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -24,6 +38,7 @@
          <div class="nav-wrapper">
          <ul class="brand-logo center">
           <li class='active'><a href="#">Home</a></li>
+          <li><a href="#introduction-section">Introduction</a></li>
           <li><a href="#Capabilities-section">Capabilities</a></li>
           <li><a href="#Tools-section">Tools</a></li>
           <li><a href="#Company-section">Company</a></li>
@@ -34,9 +49,30 @@
   </div>
     </header>
     <main>
+      <!-- Intro --> 
+		<section id="introduction-section" class="introduction-section">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col s12">
+            <img  class="responsive-img" src="assets/st.jpeg" alt="Software testing icon">
+            
+            </div>
+          </div>
+        </div><!--//profile-->
+      </div><!--//container-->
+    </section><!--//intro-->
     <section id='Home-section' class='Home-section'>
-    <h1>Home section<h1>
-    <div>Home section contain</div>
+      <div class="container">
+        <h1 class="name">Manali Pen</h1>
+        <div class="title italic"><h3>Aspiring Software Tester</h3></div>
+        <div class="profile">
+          <a href="https://www.linkedin.com/in/manali-pen-730084102/" target="_blank">
+            <i class="fa fa-linkedin social_icon"></i>
+          </a>
+          <a href="https://github.com/mpen14" target="_blank">
+            <i class="fa fa-github social_icon"></i>
+          </a>   
+      </div>
     </section>
 
     <section id='Capabilities-section' class='Capabilities-section'>
@@ -75,6 +111,12 @@
 
     <script src="env.js"></script>
 
+
+    <footer class="text-muted">
+      <div class="container">
+        <p>&copy; Manali</p>
+      </div>
+    </footer>
 </body>
 
 </html>
