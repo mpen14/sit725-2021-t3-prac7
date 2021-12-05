@@ -21,21 +21,21 @@ div.feature-item i {
     -moz-osx-font-smoothing: grayscale;    
 }
 
-.project-card {
+.capability {
     padding: 30px;
     border: 1px solid rgba(0,0,0,.1);
     -webkit-transition: all .5s;
     transition: all .5s;
     background: #fff;
     border-radius: 10px;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 360px;
     vertical-align: top;
     display: inline-block;
     margin: 30px;
 }
 
-.project-card .title {
+.capability.title {
     margin-top: 20px;
     font-size: 15pt;
     font-weight: 500;
@@ -43,8 +43,29 @@ div.feature-item i {
     line-height: 1.6em;
 }
 
-#projects-section {
+#Capabilities-section {
     margin-top: 5%;
     margin-bottom: 5%;
     text-align: -webkit-center;
 }
+
+#Tools-section {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: -webkit-center;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 15%;
+    padding: 5px;
+    margin: 130px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
