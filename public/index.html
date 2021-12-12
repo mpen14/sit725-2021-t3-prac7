@@ -42,7 +42,7 @@
           <li><a href="#Capabilities-section">Capabilities</a></li>
           <li><a href="#Tools-section">Tools</a></li>
           <li><a href="#Company-section">Company</a></li>
-          <li><a href="#Coverage-section">Coverage</a></li>
+          <li><a href="#Suggestion-section">Suggestion</a></li>
         </ul>
       </div>
     </nav>
@@ -141,28 +141,58 @@
 
     <section id='Tools-section' class='Tools-section'>
     <h2 class="section-heading text-uppercase">Tools</h2> 
-      
-        <div class="row">
-          <div class="column">
-            <img src="assets/eclipse.png" alt="Eclipse icon" style="width:100%">
-          </div>
-          <div class="column">
-            <img src="assets/soapui.jpg" alt="SoapUI icon" style="width:100%">
-          </div>
-          <div class="column">
-            <img  src="assets/winscp.jpg" alt="WinSCP icon" style="width:100%">
-          </div>
-        </div>   
+    <div class="row">
+      <div class="column">
+        <img src="assets/eclipse.png" alt="Eclipse icon" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="assets/soapui.jpg" alt="SoapUI icon" style="width:100%">
+      </div>
+      <div class="column">
+        <img  src="assets/winscp.jpg" alt="WinSCP icon" style="width:100%">
+      </div>
+    </div>    
     </section>
 
     <section id='Company-section' class='Company-section'>
-    <h1>Company section<h1>
-    <div>Company section contain</div>
-    </section>
+      <h2 class="section-heading text-uppercase">Company</h2>
+      <div class="container"> 
+      <div class="row">
+        <div class="columnCompany">
+          <img src="assets/accenture.png" alt="Accenture icon">
+        </div>
+        <div class="columnCompany">
+          <img src="assets/collabera.png" alt="Collabera icon">
+        </div>
+      </div>  
+    </div>
+      </section>
 
-    <section id='Coverage-section' class='Coverage-section'>
-    <h1>Coverage section<h1>
-    <div>Coverage section contain</div>
+    <section id='Suggestion-section' class='Suggestion-section'>
+       <div class="container">
+        <h2 class="section-heading text-uppercase">Suggestion</h2>
+        <p><b>Add suggestion of new automation tools to learn</b></p>
+        <div class="row">
+          <div class="input-field col s12">
+            <input value="" id="name" type="text" class="validate">
+            <label class="name" for="name">Tool Name</label>
+          </div>
+        
+          <div class="input-field col s12">
+            <input value="" id="description" type="text" class="validate">
+            <label class="description" for="description">Description</label>
+          </div>
+        </div>
+      </div>
+      <div class="row center" style="padding-top:50px;">
+        <a onclick="newTool()" href="#!" class="waves-effect waves-light btn-large">Submit</a>
+      </div>
+      <div class="container">
+        <div class="row" id="listComments">
+  
+        </div>
+      </div>
+      </div>
     </section>
 
     </main>

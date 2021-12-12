@@ -55,6 +55,17 @@ div.feature-item i {
     text-align: -webkit-center;
 }
 
+#Company-section {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: -webkit-center;
+}
+
+#Suggestion-section {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: -webkit-center;
+}
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
     float: left;
@@ -68,4 +79,12 @@ div.feature-item i {
     content: "";
     clear: both;
     display: table;
+  }
+
+  .columnCompany {
+   /* float: left; */
+   text-align: -webkit-center;
+    width: 15%;
+    padding: 1px;
+    margin: 15px;
   }
