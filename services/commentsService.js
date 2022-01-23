@@ -3,7 +3,7 @@ let commentsCollection;
 setTimeout(() => {
     commentsCollection = client.mongoClient.db("clientComments").collection("comments");
 
-}, 2000)
+}, 500)
 
 const getAllComments = (res) => {
     commentsCollection.find().toArray(function (err, result) {
