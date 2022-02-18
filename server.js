@@ -12,16 +12,16 @@ let io = require('socket.io')(http);
 let commentsRoute = require('./routes/comments')
 
 
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 8000;
 app.use(express.json());
 app.use(express.static(__dirname + '/public'));
 app.use('/api/comments',commentsRoute)
 
 
-app.get("/test", function (request, response) {
-  var user_name = request.query.user_name;
-  response.end("Hello " + user_name + "!");
-});
+// app.get("/test", function (request, response) {
+//   var user_name = request.query.user_name;
+//   response.end("Hello " + user_name + "!");
+// });
 
 
 //socket test

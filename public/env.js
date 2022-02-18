@@ -1,30 +1,30 @@
-const testButtonFunction=()=>{
-  alert('Thank you for clicking')
-}
+// const testButtonFunction=()=>{
+//   alert('Thank you for clicking')
+// }
 
-// connect to the socket
+// // connect to the socket
 
-let socket = io();
+// let socket = io();
 
 
-socket.on('number', (msg) => {
-    console.log('Random number: ' + msg);
-})
+// socket.on('number', (msg) => {
+//     console.log('Random number: ' + msg);
+// })
 
-console.log('test')
-$(document).ready(function(){
-  console.log('Ready')
+// console.log('test')
+// $(document).ready(function(){
+//   console.log('Ready')
   
-  //bind the button
-  $('#testButton').click(testButtonFunction)
+//   //bind the button
+//   $('#testButton').click(testButtonFunction)
 
-  //test get call
-  $.get('/test?user_name="Fantastic User"',(result)=>{
-    console.log(result)
-  })
+//   //test get call
+//   $.get('/test?user_name="Fantastic User"',(result)=>{
+//     console.log(result)
+//   })
 
 
-})
+// })
 //Send data to server
 const submitTool=(comment)=>{
   $.ajax({
@@ -36,6 +36,7 @@ const submitTool=(comment)=>{
           alert('Tool added successfully')
       }
   });
+  
 }
 
 // On click newTool() function
@@ -57,6 +58,14 @@ const requestComments=()=>{
       }
   })
 }
+
+//connect to socket
+let socket = io();
+
+socket.on('number',(msg) => {
+    console.log('Random number: '+msg);
+    $('#socketOut').html(msg)
+})
 
 listComments=(comments)=>{
   comments.forEach(comment => {
@@ -91,7 +100,7 @@ $(document).ready(function(){
   //bind the button
   //$('#testButton').click(testButtonFunction)
 
-  requestComments()
+//  requestComments()
 
 })
 

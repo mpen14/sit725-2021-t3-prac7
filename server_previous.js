@@ -7,7 +7,7 @@ let io = require('socket.io')(http);
 const bodyParser = require('body-parser');
 const MongoClient = require('mongodb').MongoClient;
 
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 8000;
 
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
