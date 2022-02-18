@@ -1,50 +1,31 @@
-Hello by Alessio:
+Hello!!!!
 
-This is my boilerplate for creating simple new applications. 
-This boilerplate is very basic and should be used as a training ground
+This is Manali Pen and this my individual project. I have created my portfolio in this project.
 
-It comprises of 
-Jquery for advanced manipulations
-Materialize for the UI interface
-Socket IO for real time comunications
+I am a Aspiring Software Tester and I have experience working on different tools and technologies in Accenture and BNP Paribas company. I have added my github link and my linkedIN link in the portfolio to have more information about me and my professional work.
 
 
 After installing, run the server using
 
-    npm start
+    npm run start
 
 
-
-If instead, you get something like the following, someone is already
-using the default port of 8080:
-
-    Server running at http://127.0.0.1:8080/
-
-    events.js:72
-        throw er; // Unhandled 'error' event
-                  ^
-    Error: listen EADDRINUSE
-        at errnoException (net.js:901:11)
-        at Server._listen2 (net.js:1039:14)
-        at listen (net.js:1061:10)
-        at Server.listen (net.js:1127:5)
-        ...
+Already someone is using port 8080 so I have enter 8000 port for execution so we have to test using 8000 port
 
 Once the server is running, test it by visiting the following URL in your
 browser:
 
-    http://localhost:8080/
+    http://localhost:8000/
 
 Next, test it by visiting the following URL in your
 browser:
 
-    http://localhost:8080/hello
-
-When you visit the above url the content will be Hello World
-
-    Hello World
+    http://localhost:8000/api/comments   It will show ID, name and discription of all the comments added 
 
 
+For testing open new terminal and run:
+
+    npm run test
 
 
 files in this repository

@@ -5,17 +5,17 @@ const dbo = require("../db/conn");
 
 
 describe("get all comments", () => {
-    const url = "http://localhost:8080/api/comments";
+    const url = "http://localhost:8000/api/comments";
 
     before((done) => {
         dbo.connect(() => {
             const commentsCollection = dbo.getDB().collection("comments");
             commentsCollection.deleteMany({});
             console.log("collection object created",commentsCollection);
-            for (let index = 1; index < 5; index++) {
+            for (let index = 1; index < 6; index++) {
                 commentsCollection.insertOne({
-                    name: 'test' + index,
-                    description: 'test description' + index
+                    name: 'tool' + index,
+                    description: 'tool description' + index
                 })
             }
             setTimeout(() => {
@@ -31,13 +31,6 @@ describe("get all comments", () => {
         });
     });
 
-    it("requests returns status code 200 within the message body", (done) => {
-        request(url, (err, res, body) => {
-            body = JSON.parse(body);
-            expect(body.statusCode).to.equals(200);
-            done();
-        });
-    });
 
     it("requests body returns 5 tools comments", (done) => {
         request(url, (err, res, body) => {
@@ -59,14 +52,14 @@ describe("get all comments", () => {
 });
 
 describe("insert comments", () => {
-    const url = "http://localhost:8080/api/comments";
+    const url = "http://localhost:8000/api/comments";
 
     before((done) => {
         dbo.connect(() => {
             const commentsCollection = dbo.getDB().collection("comments");
             commentsCollection.deleteMany({});
             commentsCollection.insertOne({
-                name: 'protractor',
+                name: 'TestNG',
                 description: 'This is a good tool to learn'
             })
             setTimeout(() => {
@@ -82,10 +75,10 @@ describe("insert comments", () => {
         });
     });
 
-    it("requests body returns added comment with name priyanka", (done) => {
+    it("requests body returns added comment with name TestNG", (done) => {
         request(url, (err, res, body) => {
             body = JSON.parse(body);
-            expect(body[0].name).to.equal('protractor');
+            expect(body[0].name).to.equal('TestNG');
             done();
         });
     });
